@@ -1,0 +1,205 @@
+/* ===== Base ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #1f2937;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Card wrapper — body content sits inside one visual "card" */
+body {
+    background: #f4f6fb;
+}
+
+body > * {
+    max-width: 420px;
+    width: 100%;
+}
+
+/* Simulate a card by styling body as a flex column container centered with a white box */
+body {
+    flex-direction: column;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111827;
+    text-align: center;
+    margin: 10px 0 4px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #2563eb;
+    text-align: center;
+    margin: 0 0 4px;
+}
+
+h3 {
+    font-size: 1.05rem;
+    margin: 24px 0 8px;
+    color: #374151;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+p {
+    text-align: center;
+    color: #4b5563;
+    line-height: 1.5;
+    margin: 4px 0;
+}
+
+/* ===== Form Card ===== */
+form {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    margin-top: 16px;
+    width: 100%;
+    max-width: 380px;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="name"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="name"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+input[type="checkbox"] {
+    accent-color: #2563eb;
+    margin-right: 6px;
+}
+
+/* ===== Buttons ===== */
+button[type="submit"] {
+    width: 100%;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* ===== Links ===== */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Dashboard specific ===== */
+ul {
+    background: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    width: 100%;
+    max-width: 380px;
+}
+
+li {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f1f3;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background: #f3f6ff;
+    color: #2563eb;
+}
+
+strong {
+    color: #111827;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    width: 100%;
+    max-width: 380px;
+    margin: 28px auto 12px;
+}
+
+/* Footer copyright text */
+body > p:last-of-type {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 8px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    form, ul, hr {
+        max-width: 100%;
+    }
+
+    body {
+        padding: 24px 16px;
+    }
+}
