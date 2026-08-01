@@ -1,0 +1,91 @@
+body {
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+
+h1 {
+    text-align: center;
+    color: #222;
+}
+
+/* Paragraphs */
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+/* Registration form */
+
+form {
+    background-color: white;
+    width: 300px;
+    padding: 40px;
+    margin: 30px auto;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input boxes */
+
+input[type="name"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Input focus */
+
+input[type="name"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Register button */
+
+button {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Register button hover */
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Login link */
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
